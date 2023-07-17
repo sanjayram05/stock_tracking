@@ -1,0 +1,203 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: cornsilk;
+    border-radius: 50px;
+
+}
+body{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    background-image: url(C:\Users\Keerthivashan\Desktop\react\stock_tracking\public\images\bullBear.jpg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+}
+.header{
+    height: 50px;
+    background-color: black;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+}
+.search{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    margin-top: 10px;
+
+}
+.search input{
+    width: 30%;
+    height: 30px;
+    border-radius: 5px;
+}
+.show{
+    width:30%;
+    height: 200px;
+    overflow-y: scroll;
+    background:none;
+}
+
+.show li{
+    color:white;
+    cursor: pointer;
+    padding:2px 0;
+
+}
+.show li:hover{
+    background-color: rgba(128, 128, 128, 0.459);
+}
+.notShow{
+    display: none;
+}
+table{
+    border-collapse: collapse;
+    margin: auto;
+    margin-left: 290px;
+    margin-top: 20px;
+    overflow-y: scroll;
+
+}
+th,td,tr{
+    border-bottom: 2px solid rgba(0, 238, 255, 0.377);
+    padding-right: 20px;
+    text-align: center;
+    color: white;
+}
+
+.red{
+    color:red;
+}
+.green{
+    color:green
+}
+.center{
+display: flex;
+align-items: center;
+justify-content: center;
+border: 2px solid rgb(201, 198, 198);
+width: 70px;
+}
+.centerO{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+.row{
+    cursor: pointer;
+}
+.row:hover{
+    background-color:rgba(128, 128, 128, 0.37)
+}
+.remove{
+    cursor: pointer;
+    border-radius: 7px;
+    background-color: red;
+    color:white;
+    width: 60px;
+    height: 25px;
+    display: none;
+}
+.row:hover .remove{
+    display: block;
+}
+.detail{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+}
+.chart{
+    margin: auto;
+    width: 70%;
+    height: 50%;
+
+
+}
+.btn-active{
+    background-color: rgba(0, 0, 0, 0.384);
+    border:2px solid yellow;
+    border-radius: 5px;
+    width: 50px;
+    margin-left: 5px;
+    color:white;
+    cursor: pointer;
+}
+.btn-notActive{
+    background-color: rgba(0, 0, 0, 0.384);
+    border-radius: 5px;
+    border:2px solid white;
+    width: 50px;
+    margin-left: 5px;
+    color:white;
+    cursor: pointer;
+}
+.data{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.data a{
+  color: cyan;
+  text-decoration: none;
+}
+.data a:hover{
+    color: rgba(0, 255, 255, 0.473);
+}
+.subdata{
+    border:1px solid white;
+    width: 500px;
+    text-align: center;
+}
+#section{
+    margin-top: 150px;
+    margin-right: 400px;
+    margin-bottom: 10px;
+    height: 5em;
+    width: 200px;
+    position: relative;
+    overflow: hidden;
+}
+#section > * {position: absolute; top: 100%; left: 0;
+    animation: 12s autoplay2 infinite ease-in-out}
+@keyframes autoplay2 {
+        0% {top: 100%}
+        4% {top: 0%}
+        33.33% {top: 0%}
+        37.33% {top: -100%}
+        100% {top: -100%}
+      }
+#section > *:nth-child(1) {animation-delay: 0s}
+#section > *:nth-child(2) {animation-delay: 4s}
+#section > *:nth-child(3) {animation-delay: 8s}
+.logo{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo h4{
+    padding-left: 5px;
+}
